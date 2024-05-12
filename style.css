@@ -1,0 +1,110 @@
+body{
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    
+    min-height: 100vh;
+    margin: none;
+    padding: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+  position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.card{
+    background-color: #fdfdfd46;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card h1{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+.card p{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+.card button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #0056b3;
+}
+.card button:active{
+    background-color: #0056b3;
+}
+.card button:focus{
+    outline: none;
+}
+.card button:disabled{
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+.card button:disabled:hover{
+    background-color: #6c757d;
+}
+.card button:disabled:active{
+    background-color: #6c757d;
+}
+.card button:disabled:focus{
+    outline: none;
+}
+.card a{
+    color: #deeeff;
+    text-decoration: none;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+.card a:active{
+    text-decoration: underline;
+}
+
+
+
+
+.fade-in{
+    animation: fadeIn 1s, slideIn 1s;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
